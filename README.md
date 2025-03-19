@@ -80,28 +80,7 @@ INSERT INTO admins (username, password) VALUES ("admin", "paste_your_hashed_pass
 
 ---
 
-## ⚠ Known Issues & Fixes
 
-### 1️⃣ Error: "No routes matched location /"
-✅ Fix: Ensure `App.js` has a default route:
-
-```jsx
-<Routes>
-  <Route path="/" element={<Navigate to="/admin-login" />} />
-</Routes>
-```
-
-### 2️⃣ MySQL Authentication Error (ER_NOT_SUPPORTED_AUTH_MODE)
-✅ Fix: Run the following in MySQL:
-
-```sql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourpassword';
-FLUSH PRIVILEGES;
-```
-
----
-
-## 🛣 Roadmap
 
 ### 🚀 Future Enhancements:
 - 🔹 Predict User Experience Level
@@ -111,18 +90,6 @@ FLUSH PRIVILEGES;
 
 ---
 
-## 🤝 Contributing
-Pull requests are welcome! If you want to improve this project, feel free to contribute.
-
-For major changes, open an issue first to discuss the changes.
-
----
-
-## 📩 Contact & Support
-For support, issues, or collaboration, feel free to reach out:
-
-📧 **Email:** neeleshmaurya@example.com  
-💻 **GitHub:** [Neelesh Maurya](https://github.com/NeeleshMaurya03)
 
 ---
 
